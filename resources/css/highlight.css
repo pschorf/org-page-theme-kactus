@@ -1,135 +1,70 @@
+/* Pretty printing styles. Used with prettify.js.
+ *
+ * This version is slight modified based on the original version.
+ *
+ * Name:    Stanley Ng
+ * Email:   stanleyhlng@googlegroups.com
+ *
+ * Reference:
+ * http://code.google.com/p/google-code-prettify/source/browse/trunk/src/prettify.css
+ */
+.pln {
+  color: #bd3613; }
 
+.str {
+  color: #269186; }
 
-/* -------------------------------------*/
-/* Syntax Coloring */
-/* -------------------------------------*/
-.highlight pre {
-  font-size: 13px;
-  word-wrap: break-word;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto;
-  padding: 16px;
-  padding-left: 21px;
-  padding-bottom: 14px;
-  display: block;
-  color: #788D9E;
-  background: #fff;
-  border: none;
-  box-shadow: inset 0 0 0 1px #E4EBF2, inset 49px 0 0 #FBFDFE, inset 50px 0 0 #E4EBF2;
-  border-radius: 4px;
-  overflow: hidden;
-  font-family: 'Menlo', 'Monaco', Courier, monospace;
+.kwd {
+  color: #859900; }
 
-}
+.com {
+  color: #586175;
+  font-style: italic; }
 
-.post .highlight pre ol li {
-  font-size: 13px;
-  list-style: none;
-  line-height: 1.6; }
+.typ {
+  color: #b58900; }
 
-.post .highlight pre ol li + li {
-  margin-top: 0; }
+.lit {
+  color: #2aa198; }
 
-/* Inline code*/
-.inline {
-  font-size: 14px;
-  color: #333;
-  font-family: 'Menlo', 'Monaco', Courier, monospace;
-  border-bottom: 1px dotted #ddd;
-  padding-bottom: 2px; }
+.pun {
+  color: #839496; }
 
-.o,
-.nf,
-.highlight pre ol li {
-  color: #788D9E;
-  /* Default */ }
+.opn {
+  color: #839496; }
 
-.k,
-.kc,
-.k + .nx {
-  color: #FF9740;
-  /* Orange */
-  /* k + nx = followed by "New" */ }
+.clo {
+  color: #839496; }
 
-.c,
-.cm,
-.cp,
-.c1,
-.cs {
-  color: #A4BDD1; }
+.tag {
+  color: #268bd2; }
 
-/* Comment */
-.mi, .mf {
-  color: #5BC1F0; }
+.atn {
+  color: #586175; }
 
-/* Blue */
-.s {
-  color: #8DDE19;
-  /* Original Green */
-  color: #6ED300;
-  /* Darker Green */ }
+.atv {
+  color: #2aa198; }
 
-/*# String escaping in Framer
-"myString,..." */
-.s + .si,
-.si + .nx,
-.si + .s,
-.nx + .si {
-  color: #6ED300; }
+.dec {
+  color: #268bd2; }
 
-/* Lighter, following dots like ".states.add etc" */
-.p + .nx {
-  color: #79A3C4; }
+.var {
+  color: #268bd2; }
 
-/* Custom LineNumbers */
-.highlight pre ol {
-  counter-reset: linenumbers;
-  margin-left: 50px; }
+.fun {
+  color: #FF0000; }
 
-.highlight pre ol li {
-  line-height: 1.6;
-  text-align: left; }
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint {
+  background-color: #042029;
+  padding: 10px;
+  border: 1px solid #E1E1E8; }
 
-/* Line-height bug in FF */
-.is-firefox .highlight pre ol li {
-  line-height: 1.55; }
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  color: #4c666c;
+  margin: 0 0 0 40px; }
 
-.highlight pre ol li:before {
-  content: counter(linenumbers);
-  counter-increment: linenumbers;
-  float: left;
-  margin-left: -50px;
-  font-size: 10px;
-  color: #B7CADA;
-  position: relative;
-  top: 3px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  text-align: right;
-  width: 12px;
-  left: -4px;
-  white-space: nowrap; }
-
-  .highlight .lineno {
-    color: #B7CADA;
-    font-size: 10px;
-    display:inline-block;
-    padding: 0 30px 0 0px;
-    /*border-right:1px solid #ccc;*/
-    position: relative;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    text-align: right;
-
-    white-space: nowrap;
-  }
-
-  .highlight pre code {
-    display: block;
-    white-space: pre;
-    overflow-x: auto;
-    word-wrap: normal;
-  }
+ol.linenums li {
+  line-height: 18px;
+  padding-left: 12px; }
